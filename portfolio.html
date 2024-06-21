@@ -1,0 +1,211 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <body>
+        <div class="min-h-screen flex flex-col bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white">
+        <nav class="flex justify-between items-center p-6 bg-black bg-opacity-50">
+            <div class="text-2xl font-bold">MyWebsite</div>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline">首頁</a></li>
+                <li><a href="portfolio.html" class="hover:underline">作品集</a></li>
+                <li><a href="contest.html" class="hover:underline">比賽經歷</a></li>
+                <li><a href="about.html" class="hover:underline">聯絡方式</a></li>
+            </ul>
+        </nav>
+        <main class="flex-grow container mx-auto p-4">
+        <section id="gallery" class="my-8">
+            <h2 id="dc" class="text-2xl font-bold text-zinc-900 dark:text-white mb-4">暗棋對局程式</h2>
+            <div class="flex flex-col lg:flex-row gap-4 justify-center items-center">
+                <div class="flex-1 relative">
+                <img id="image1" style="width: 800px;height: 500px;border: 2px black solid;" src="./img/darkchess/1.jpg" alt="Gallery Image" class="w-full h-auto rounded-lg shadow-lg mb-4 lg:mb-0 ml-10%">
+                <button id="prev-btn" onclick="fun1('des')" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-l hover:bg-blue-600 transition-colors">←</button>
+                <button id="next-btn" onclick="fun1('inc')" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-r hover:bg-blue-600 transition-colors">→</button>
+                </div>
+                <div class="flex-1 bg-zinc-100 dark:bg-zinc-700 p-4 rounded-lg shadow-lg w-full lg:w-1/2">
+                <h3 id="image-title" class="text-xl font-semibold text-zinc-900 dark:text-white">簡介:</h3>
+                <p id="image-description" class="text-zinc-700 dark:text-zinc-300" style="font-size: large;">我的畢業專題是開發一款暗棋對局程式，旨在通過研究和應用先進的演算法來找出最佳下法，以贏得比賽。主要研究方向是利用Alpha-Beta Pruning演算法進行遊戲樹搜尋。
+                這種演算法在篩選最佳走棋策略方面具有高效性，能夠大幅度提高搜尋效率，減少不必要的計算。Alpha-Beta Pruning透過剪枝技術，排除那些無需考慮的分支，從而加速決策過程。在開發過程中，我們著重於演算法的優化和實現，確保程式能夠在複雜的棋局中迅速做出最佳決策，
+                提升整體對局的競爭力。這項專題不僅展示了人工智慧在遊戲中的應用潛力，也為未來的算法研究提供了有價值的參考。通過這個專題，我們希望能夠推動暗棋AI對局技術的進一步發展，為愛好者提供更具挑戰性和趣味性的遊戲體驗。</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="my-8">
+            <h2 id="tk" class="text-2xl font-bold text-zinc-900 dark:text-white mb-4" style="text-align: right;">坦克大戰</h2>
+            <div class="flex flex-col lg:flex-row gap-4 justify-center items-center">
+                <div class="flex-1 bg-zinc-100 dark:bg-zinc-700 p-4 rounded-lg shadow-lg w-full lg:w-1/2">
+                <h3 id="image-title" class="text-xl font-semibold text-zinc-900 dark:text-white">簡介:</h3>
+                <p id="image-description" class="text-zinc-700 dark:text-zinc-300" style="font-size: large;">利用Java編寫的坦克大戰視窗程式，旨在為玩家提供一個富有挑戰性和樂趣的對戰平台。這款程式擁有友好的視窗介面，允許玩家自行創建和編輯遊戲地圖，滿足個性化需求。玩家可以在同一個區域網路中連線進行多人對戰，
+                實現與朋友之間的實時競技。該程式採用先進的網路通信技術，確保遊戲過程中數據傳輸的穩定性和流暢性，避免延遲和卡頓現象。在遊戲開發過程中，我們著重於遊戲機制的設計和優化，確保坦克的移動、攻擊、防禦等功能的順暢運行。同時，還加入了各種戰術元素，如地形影響、障礙物設置和資源獲取等，
+                使遊戲更加豐富多變。為了提升玩家體驗，我們還設計了多種坦克和武器選項，玩家可以根據自己的戰術喜好進行選擇和搭配。這款坦克大戰程式不僅展示了Java在遊戲開發中的強大應用潛力，也為多人網路對戰遊戲的實現提供了有價值的參考。通過這個專題，我們希望能夠推動網路對戰遊戲技術的進一步發展，為玩家帶來更多精彩和樂趣。</p>
+                </div>
+                <div class="flex-1 relative">
+                <img id="image2" style="width: 800px;height: 500px;border: 2px black solid;" src="./img/tank/1.jpg" alt="Gallery Image" class="w-full h-auto rounded-lg shadow-lg mb-4 lg:mb-0 ml-10%">
+                <button id="prev-btn" onclick="fun2('des')" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-l hover:bg-blue-600 transition-colors">←</button>
+                <button id="next-btn" onclick="fun2('inc')" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-r hover:bg-blue-600 transition-colors">→</button>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="my-8">
+            <h2 id="ocw" class="text-2xl font-bold text-zinc-900 dark:text-white mb-4">OCW網站</h2>
+            <div class="flex flex-col lg:flex-row gap-4 justify-center items-center">
+                <div class="flex-1 relative">
+                <img id="image3" style="width: 800px;height: 500px;border: 2px black solid;" src="./img/ocw/1.jpg" alt="Gallery Image" class="w-full h-auto rounded-lg shadow-lg mb-4 lg:mb-0 ml-10%">
+                <button id="prev-btn" onclick="fun3('des')" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-l hover:bg-blue-600 transition-colors">←</button>
+                <button id="next-btn" onclick="fun3('inc')" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-r hover:bg-blue-600 transition-colors">→</button>
+                </div>
+                <div class="flex-1 bg-zinc-100 dark:bg-zinc-700 p-4 rounded-lg shadow-lg w-full lg:w-1/2">
+                <h3 id="image-title" class="text-xl font-semibold text-zinc-900 dark:text-white">簡介:</h3>
+                <p id="image-description" class="text-zinc-700 dark:text-zinc-300" style="font-size: large;">在軟體工程課程中，我們小組模擬了軟體從接案到開發的完整過程，最終開發出了一個名為OCW（Open Courseware）網站的專案。這個網站旨在為使用者提供一個便捷、高效的線上學習平台，具備多種實用功能，以提升學習體驗。
+                首先，OCW網站允許使用者創建個人帳號，提供個性化的學習環境。註冊後，使用者可以瀏覽和觀看各種課程視頻，這些課程涵蓋了多個學科領域，滿足不同學習需求。每個課程頁面都詳細介紹了課程內容和目標，方便使用者選擇適合自己的課程。此外，網站提供了收藏課程功能，使用者可以將喜愛的課程添加到收藏列表中，
+                方便日後快速訪問和觀看。這不僅提升了學習的便利性，還幫助使用者有效管理自己的學習資源。OCW網站還內置了一個線上筆記本功能，允許使用者在觀看課程的同時，實時記錄學習重點和筆記。這個功能不僅提高了學習效率，還便於使用者隨時回顧和整理學習內容，進一步鞏固所學知識。
+                在開發過程中，我們應用了軟體工程中的需求分析、設計、實現、測試等各個階段的知識，確保項目的質量和穩定性。通過這次實踐，我們不僅深化了對軟體開發流程的理解，還提高了團隊協作和解決問題的能力。OCW網站的成功開發，為我們在實際工作中的軟體開發打下了堅實的基礎。</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="my-8">
+            <h2 id="ct" class="text-2xl font-bold text-zinc-900 dark:text-white mb-4" style="text-align: right;">聊天機器人網站</h2>
+            <div class="flex flex-col lg:flex-row gap-4 justify-center items-center">
+                <div class="flex-1 bg-zinc-100 dark:bg-zinc-700 p-4 rounded-lg shadow-lg w-full lg:w-1/2">
+                <h3 id="image-title" class="text-xl font-semibold text-zinc-900 dark:text-white">簡介:</h3>
+                <p id="image-description" class="text-zinc-700 dark:text-zinc-300" style="font-size: large;">在資料庫系統課程中，我們開發了一個聊天機器人網站，旨在為使用者提供一個創建和管理個人聊天機器人的平台。這個網站允許使用者註冊並創建自己的聊天機器人，每個機器人都可以根據特定需求進行定制和配置。
+                網站提供了一個簡單直觀的介面，使使用者能夠輕鬆地設置機器人的行為規則和對話流程。使用者可以通過編輯對話腳本來定義機器人的回應方式，滿足不同場景下的應用需求。這些腳本存儲在後端資料庫中，確保數據的安全和穩定。此外，我們的網站還提供了API，允許使用者將創建的聊天機器人整合到其他應用或服務中。
+                通過API呼叫，開發者可以在自己的項目中使用這些機器人，實現自動化客服、智能問答等功能。在開發過程中，我們應用了資料庫系統的各種知識，包括數據模型設計、查詢優化和資料庫管理等。這個專案不僅提高了我們的技術能力，還深化了我們對資料庫系統和API整合的理解。最終，我們成功開發出一個功能強大且靈活的聊天機器人平台，為使用者帶來了便利和創新。</p>
+                </div>
+                <div class="flex-1 relative">
+                <img id="image4" style="width: 800px;height: 500px;border: 2px black solid;" src="./img/chat/1.jpg"  alt="Gallery Image" class="w-full h-auto rounded-lg shadow-lg mb-4 lg:mb-0 ml-10%">
+                <button id="prev-btn" onclick="fun4('des')" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-l hover:bg-blue-600 transition-colors">←</button>
+                <button id="next-btn" onclick="fun4('inc')" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-r hover:bg-blue-600 transition-colors">→</button>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="my-8">
+            <h2 id="cp" class="text-2xl font-bold text-zinc-900 dark:text-white mb-4">編譯器-scanner</h2>
+            <div class="flex flex-col lg:flex-row gap-4 justify-center items-center">
+                <div class="flex-1 relative">
+                <img id="image5" style="width: 800px;height: 500px;border: 2px black solid;" src="./img/compiler/1.jpg" alt="Gallery Image" class="w-full h-auto rounded-lg shadow-lg mb-4 lg:mb-0 ml-10%">
+                <button id="prev-btn" onclick="fun5('des')" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-l hover:bg-blue-600 transition-colors">←</button>
+                <button id="next-btn" onclick="fun5('inc')" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-r hover:bg-blue-600 transition-colors">→</button>
+                </div>
+                <div class="flex-1 bg-zinc-100 dark:bg-zinc-700 p-4 rounded-lg shadow-lg w-full lg:w-1/2">
+                <h3 id="image-title" class="text-xl font-semibold text-zinc-900 dark:text-white">簡介:</h3>
+                <p id="image-description" class="text-zinc-700 dark:text-zinc-300" style="font-size: large;">在編譯器課程中，我們專注於開發編譯器的第一階段，即詞法分析器（Scanner）。該部分的主要功能是從源代碼中識別並提取出一系列稱為標記（tokens）的基本單元。
+                這些標記包括關鍵字、標識符、運算符、分隔符等，它們是後續語法分析器進行進一步處理和解析的基礎。開發詞法分析器的過程中，我們學習了如何設計和實現符合特定語言詞法規則的掃描器。這需要深入理解語言的詞法結構和規則，並實現有效的字符串識別和分類算法。同時，我們也處理了各種不同類型的輸入，包括正常程式碼、注釋以及特殊情況如錯誤輸入。
+                詞法分析器的成功實現不僅是編譯過程中的重要一步，也為後續語法分析和語義分析提供了準確的輸入。這次項目不僅加深了我們對編譯器組件的理解，還提高了我們的編程技能和解決問題的能力。</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="my-8">
+            <h2 id="da" class="text-2xl font-bold text-zinc-900 dark:text-white mb-4" style="text-align: right;">車禍事故資料分析</h2>
+            <div class="flex flex-col lg:flex-row gap-4 justify-center items-center">
+                <div class="flex-1 bg-zinc-100 dark:bg-zinc-700 p-4 rounded-lg shadow-lg w-full lg:w-1/2">
+                <h3 id="image-title" class="text-xl font-semibold text-zinc-900 dark:text-white">簡介:</h3>
+                <p id="image-description" class="text-zinc-700 dark:text-zinc-300" style="font-size: large;">在資料分析課程中，我們利用R語言對臺中地區的車禍事故進行了詳細分析，研究內容涵蓋事故類型、車種、天氣和地點等多個方面。我們從公開數據集中收集了大量車禍相關數據，
+                並通過R語言進行清洗、處理和分析，以揭示各種因素對車禍發生的影響。首先，我們對不同事故類型進行了分類統計，了解了各類事故的發生頻率和特點。接著，分析了不同車種在事故中的分佈情況，如轎車、摩托車和貨車等，從中找出了哪些車種更容易發生事故。此外，我們還考察了天氣條件對車禍的影響，
+                通過將晴天、雨天、霧天等不同天氣狀況下的事故數據進行比較，發現了特定天氣條件下車禍發生的規律。地點分析方面，我們通過地理資訊系統（GIS）將事故數據可視化，展示了事故多發地點和高風險區域，為交通安全管理提供了參考依據。總的來說，這次分析不僅提高了我們對R語言的應用能力，還深化了我們對交通安全問題的理解，為改善臺中地區的交通安全提供了有價值的數據支持。</p>
+                </div>
+                <div class="flex-1 relative">
+                <img id="image6" style="width: 800px;height: 500px;border: 2px black solid;" src="./img/traffic/1.jpg"  alt="Gallery Image" class="w-full h-auto rounded-lg shadow-lg mb-4 lg:mb-0 ml-10%">
+                <button id="prev-btn" onclick="fun6('des')" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-l hover:bg-blue-600 transition-colors">←</button>
+                <button id="next-btn" onclick="fun6('inc')" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-r hover:bg-blue-600 transition-colors">→</button>
+                </div>
+            </div>
+        </section>
+        </main>
+        </div>
+        <footer class="bg-zinc-100 dark:bg-zinc-700 p-4 text-center shadow-inner">
+            <p class="text-zinc-900 dark:text-white">&copy;2024 NTCU CS My WebSite</p>
+        </footer>
+
+    <script>
+        var img1 = 1;
+        var img2 = 1;
+        var img3 = 1;
+        var img4 = 1;
+        var img5 = 1;
+        var img6 = 1;
+        function fun1(com) {
+            var max = 4;
+            if(com=='inc')
+                img1++;
+            else
+                img1--;
+            if(img1>max)
+                img1 = 1;
+            if(img1==0)
+                img1 = max;
+            var url = "./img/darkchess/"+img1.toString()+".jpg"
+            if(img1==max)
+                url = "./img/darkchess/4.gif"
+            document.getElementById("image1").src = url;
+        }
+        function fun2(com) {
+            var max = 6;
+            if(com=='inc')
+                img2++;
+            else
+                img2--;
+            if(img2>max)
+                img2 = 1;
+            if(img2==0)
+                img2 = max;
+            var url = "./img/tank/"+img2.toString()+".jpg"
+            document.getElementById("image2").src = url;
+        }
+        function fun3(com) {
+            var max = 6;
+            if(com=='inc')
+                img3++;
+            else
+                img3--;
+            if(img3>max)
+                img3 = 1;
+            if(img3==0)
+                img3 = max;
+            var url = "./img/ocw/"+img3.toString()+".jpg"
+            document.getElementById("image3").src = url;
+        }
+        function fun4(com) {
+            var max = 6;
+            if(com=='inc')
+                img4++;
+            else
+                img4--;
+            if(img4>max)
+                img4 = 1;
+            if(img4==0)
+                img4 = max;
+            var url = "./img/chat/"+img4.toString()+".jpg"
+            document.getElementById("image4").src = url;
+        }
+        function fun5(com) {
+            var max = 4;
+            if(com=='inc')
+                img5++;
+            else
+                img5--;
+            if(img5>max)
+                img5 = 1;
+            if(img5==0)
+                img5 = max;
+            var url = "./img/compiler/"+img5.toString()+".jpg"
+            document.getElementById("image5").src = url;
+        }
+        function fun6(com) {
+            var max = 7;
+            if(com=='inc')
+                img6++;
+            else
+                img6--;
+            if(img6>max)
+                img6 = 1;
+            if(img6==0)
+                img6 = max;
+            var url = "./img/traffic/"+img6.toString()+".jpg"
+            document.getElementById("image6").src = url;
+        }
+    </script>   
+    </body>
+</html>
